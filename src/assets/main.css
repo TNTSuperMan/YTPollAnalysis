@@ -1,0 +1,22 @@
+body{
+  background:#333;
+  color:white;
+}
+input{
+  background:none;
+  color:white;
+  padding:5px;
+  border-radius: 5px;
+  margin:2px;
+}
+button{
+  background:none;
+  border:none;
+  border-radius:20px;
+  padding:10px;
+  color:white;
+  transition:all 0.3s ease;
+}
+button:hover{
+  background:#155;
+}
