@@ -41,6 +41,6 @@ div.bar{
 div.text{
   position:relative;
   display:inline-block;
-  width:calc(100% - 200px);
+  width:calc(100% - 300px);
 }
 </style>
