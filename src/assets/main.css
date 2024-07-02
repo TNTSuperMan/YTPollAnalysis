@@ -25,7 +25,7 @@ input:focus-visible{
   border-bottom:1px #fff solid;
 }
 input[type=number]{
-  width:50px;
+  width:75px;
 }
 button{
   background:none;
