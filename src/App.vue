@@ -24,9 +24,25 @@ const state = computed(()=>{
 })
 </script>
 <template>
-    人数： <input type="number" min="0" v-model="votecount">
-    <Option v-for="(d,i) in polldata" v-model="polldata[i]" :id="i"
+    <div class="box">
+        <input type="text" class="title" placeholder="コミュニティに質問する..."><br>
+        <label class="vc"><input type="number" min="0" v-model="votecount" class="vcinp">票</label>
+        <Option v-for="(d,i) in polldata" v-model="polldata[i]" :id="i"
         :vc="votecount" @del="polldata.splice(i,1)"/>
-    <br><button @click="polldata.push({name:'',rate:0})">選択肢をさらに追加</button>
+        <br><button @click="polldata.push({name:'',rate:0})" class="add">選択肢をさらに追加</button>
+    </div>
+    
     <p>{{ state }}</p>
 </template>
+<style scoped>
+.title{
+    border:none;
+}
+.vc{
+    color:#aaa;
+}
+.vcinp{
+    color:#aaa;
+    border:none;
+}
+</style>
